@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/SteelBlue"
+    >
+
+    <TextView
+        android:textColor="@color/Black"
+        android:background="@color/SteelBlue"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center"
+        android:text="چیکار کنم؟"
+        android:textSize="35sp" />
+
+    <Button
+        android:background="@color/MSpring"
+        android:id="@+id/btnPassG"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="رمزساز"
+        android:textSize="20sp" />
+
+    <Button
+        android:background="@color/GoodWoman"
+        android:id="@+id/btnWeatherG"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="آب و هوا"
+        android:textSize="20sp" />
+
+    <Button
+        android:background="@color/DarkGold"
+        android:id="@+id/btnAgeG"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="تاریخ و سن"
+        android:textSize="20sp" />
+    <Button
+        android:background="@color/Cadet"
+        android:id="@+id/btnTimer"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="زمان سنج"
+        android:textSize="20sp" />
+    <Button
+        android:background="@color/MViolet"
+        android:id="@+id/btnStopWatch"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text="کرنومتر"
+        android:textSize="20sp" />
+
+</LinearLayout>
