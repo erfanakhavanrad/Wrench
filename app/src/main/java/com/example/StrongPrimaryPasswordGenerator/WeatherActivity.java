@@ -18,7 +18,6 @@ import java.net.URL;
 public class WeatherActivity extends AppCompatActivity {
     private static final String TAG = "MainActivity";
     Button btn1;
-    TextView txt2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,11 +60,11 @@ public class WeatherActivity extends AppCompatActivity {
                         Log.d(TAG, "run: " + Asr);
                         txt1.setText(Asr);
                         btn1 = findViewById(R.id.btn1);
-                        txt2 = findViewById(R.id.txt2);
+
                         btn1.setOnClickListener(new View.OnClickListener() {
                             @Override
                             public void onClick(View v) {
-                                txt2.setText(Asr);
+//                                txt2.setText(Asr);
                             }
                         });
                     }

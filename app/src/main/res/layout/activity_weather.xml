@@ -8,6 +8,7 @@
     android:orientation="vertical"
     android:layout_gravity="center"
     android:gravity="center"
+    android:background="@color/GoodWoman"
     >
 
     <TextView
@@ -27,10 +28,4 @@
         android:hint="do"
         android:textSize="30sp"
         android:gravity="center"/>
-    <TextView
-        android:id="@+id/txt2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:hint="show"
-        android:textSize="30sp"/>
 </LinearLayout>

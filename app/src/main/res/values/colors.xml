@@ -15,4 +15,5 @@
     <color name="DarkGold">#FBB117</color>
     <color name="MViolet">#9172EC</color>
     <color name="Cadet">#4C7D7E</color>
+    <color name="Transparent">#00000000</color>
 </resources>

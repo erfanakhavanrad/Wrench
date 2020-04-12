@@ -26,5 +26,29 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(passPage);
             }
         });
+
+        btnWeatherG.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent weatherPage = new Intent(MainActivity.this, WeatherActivity.class);
+                startActivity(weatherPage);
+            }
+        });
+
+        btnAgeG.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent agePage = new Intent(MainActivity.this, AgeCalculaterActivity.class);
+                startActivity(agePage);
+            }
+        });
+
+        btnStopWatch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent stopPage = new Intent(MainActivity.this, StopWatchActivity.class);
+                startActivity(stopPage);
+            }
+        });
     }
 }
