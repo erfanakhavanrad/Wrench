@@ -3,6 +3,7 @@ package com.example.StrongPrimaryPasswordGenerator;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
+import android.content.pm.ActivityInfo;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -55,7 +56,7 @@ public class AgeCalculaterActivity extends AppCompatActivity {
                         R.style.ThemeOverlay_AppCompat_Light,
                         dateSetListener1, year, month, day
                 );
-                datePickerDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                datePickerDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.WHITE));
                 datePickerDialog.show();
             }
         });
@@ -76,7 +77,7 @@ public class AgeCalculaterActivity extends AppCompatActivity {
                         R.style.Theme_AppCompat_DayNight_Dialog_MinWidth,
                         getDateSetListener2, year, month, day
                 );
-                datePickerDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                datePickerDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.BLACK));
                 datePickerDialog.show();
             }
         });
