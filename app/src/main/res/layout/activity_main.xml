@@ -4,56 +4,58 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity"
     android:background="@color/SteelBlue"
-    >
+    android:orientation="vertical"
+    tools:context=".MainActivity">
 
     <TextView
-        android:textColor="@color/Black"
-        android:background="@color/SteelBlue"
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:background="@color/SteelBlue"
         android:gravity="center"
         android:text="چیکار کنم؟"
+        android:textColor="@color/Black"
         android:textSize="35sp" />
 
     <Button
-        android:background="@color/MSpring"
         android:id="@+id/btnPassG"
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:background="@color/MSpring"
         android:text="رمزساز"
         android:textSize="20sp" />
 
     <Button
-        android:background="@color/GoodWoman"
         android:id="@+id/btnWeatherG"
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:background="@color/GoodWoman"
         android:text="آب و هوا"
         android:textSize="20sp" />
 
     <Button
-        android:background="@color/DarkGold"
         android:id="@+id/btnAgeG"
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:background="@color/DarkGold"
         android:text="تاریخ و سن"
         android:textSize="20sp" />
+
     <Button
-        android:background="@color/Cadet"
-        android:id="@+id/btnTimer"
-        android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:text="زمان سنج"
-        android:textSize="20sp" />
-    <Button
-        android:background="@color/MViolet"
         android:id="@+id/btnStopWatch"
         android:layout_width="match_parent"
         android:layout_height="100dp"
+        android:background="@color/MViolet"
         android:text="کرنومتر"
         android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnDownloader"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/Cadet"
+        android:text="دانلودر"
+        android:textSize="20sp" />
+
 
 </LinearLayout>

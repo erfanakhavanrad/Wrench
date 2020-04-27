@@ -3,6 +3,7 @@ package com.example.StrongPrimaryPasswordGenerator;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
         Button btnPassG = findViewById(R.id.btnPassG);
         Button btnWeatherG = findViewById(R.id.btnWeatherG);
         Button btnAgeG = findViewById(R.id.btnAgeG);
-        Button btnTimer = findViewById(R.id.btnTimer);
+        Button btnDownloader = findViewById(R.id.btnDownloader);
         Button btnStopWatch = findViewById(R.id.btnStopWatch);
 
         btnPassG.setOnClickListener(new View.OnClickListener() {
@@ -48,6 +49,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent stopPage = new Intent(MainActivity.this, StopWatchActivity.class);
                 startActivity(stopPage);
+            }
+        });
+        btnDownloader.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent downloadPage = new Intent(MainActivity.this, DownloaderActivity.class);
+                startActivity(downloadPage);
             }
         });
     }
