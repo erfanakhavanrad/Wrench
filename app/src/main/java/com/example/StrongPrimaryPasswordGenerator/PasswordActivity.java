@@ -13,26 +13,26 @@ import android.widget.TextView;
 
 import java.util.Random;
 
-public class PasswordsActivity extends AppCompatActivity {
+public class PasswordActivity extends AppCompatActivity {
+    EditText enterLength;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_passwords);
+        setContentView(R.layout.activity_password);
+
         Button btng = findViewById(R.id.btng);
         final TextView GeneratedN = findViewById(R.id.GeneratedN);
         Button CopyPassword = findViewById(R.id.CopyPassword);
-        final EditText enterLength= findViewById(R.id.enterLength);
+        enterLength = findViewById(R.id.enterLength);
 
         btng.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Random random = new Random();
-                int i =(random.nextInt(Integer.parseInt(enterLength.getText().toString()))) + (Integer.parseInt(enterLength.getText().toString()))
-                        +(Integer.parseInt(enterLength.getText().toString()));
-//                random.nextInt();
-//                GeneratedN.setText(random.toString());
-                GeneratedN.setText(i+"");
+                gen();
+
+                GeneratedN.setText(gen() + "");
             }
         });
         CopyPassword.setOnClickListener(new View.OnClickListener() {
@@ -42,12 +42,18 @@ public class PasswordsActivity extends AppCompatActivity {
                 ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
                 ClipData clip = ClipData.newPlainText("labe", GeneratedN.getText().toString());
                 clipboard.setPrimaryClip(clip);
-
-//                ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
-//                ClipData clip = ClipData.newPlainText(label, text);
-//                clipboard.setPrimaryClip(clip);
             }
         });
     }
+
+
+    public int gen() {
+        Random r = new Random(System.currentTimeMillis());
+//        return ((1 + r.nextInt(2)) * 10000 + r.nextInt(10000));
+        String et = enterLength.getText().toString();
+        int fet = Integer.parseInt(et);
+
+        int g = r.nextInt(fet);
+        return ((1 + r.nextInt(2)) * 10000) + g;
+    }
 }
-//Random random = new Random(Integer.parseInt(enterLength.getText().toString()));

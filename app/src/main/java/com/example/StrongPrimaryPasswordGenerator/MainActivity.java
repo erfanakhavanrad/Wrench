@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         btnPassG.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent passPage = new Intent(MainActivity.this, PasswordsActivity.class);
+                Intent passPage = new Intent(MainActivity.this, PasswordActivity.class);
                 startActivity(passPage);
             }
         });

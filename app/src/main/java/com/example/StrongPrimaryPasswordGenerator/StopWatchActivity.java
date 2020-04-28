@@ -33,17 +33,31 @@ public class StopWatchActivity extends AppCompatActivity {
         Typeface MMedium = Typeface.createFromAsset(getAssets(), "medium.ttf");
 //        customize font
         btnStart.setTypeface(MMedium);
+
         btnStart.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 //                passing animation
                 icanchor.startAnimation(roundingalone);
                 btnStop.animate().alpha(1).setDuration(300).start();
-                btnStart.animate().alpha(0).setDuration(300).start();
+                btnStart.animate().alpha(1).setDuration(300).start();
                 //start time
                 timeHere.setBase(SystemClock.elapsedRealtime());
                 timeHere.start();
+                btnStart.setText("تنظیم مجدد");
             }
         });
+
+        btnStop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                icanchor.clearAnimation();
+                timeHere.clearAnimation();
+                timeHere.stop();
+                btnStart.setText("شروع");
+
+            }
+        });
+
     }
 }
