@@ -29,12 +29,11 @@ public class PasswordActivity extends AppCompatActivity {
         btng.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Random random = new Random();
                 gen();
-
                 GeneratedN.setText(gen() + "");
             }
         });
+
         CopyPassword.setOnClickListener(new View.OnClickListener() {
             @Override
 
@@ -46,14 +45,15 @@ public class PasswordActivity extends AppCompatActivity {
         });
     }
 
-
     public int gen() {
+        Random random = new Random();
+        final int MINIMUM;
         Random r = new Random(System.currentTimeMillis());
-//        return ((1 + r.nextInt(2)) * 10000 + r.nextInt(10000));
         String et = enterLength.getText().toString();
         int fet = Integer.parseInt(et);
-
+        MINIMUM = fet;
+        int v = random.nextInt(Integer.MAX_VALUE - MINIMUM) + MINIMUM;
         int g = r.nextInt(fet);
-        return ((1 + r.nextInt(2)) * 10000) + g;
+        return ((1 + r.nextInt(1)) * fet + r.nextInt(fet));
     }
 }
