@@ -29,11 +29,11 @@ public class PasswordActivity extends AppCompatActivity {
             btng.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    if (enterLength.getText() != null && !enterLength.getText().equals("")) {
-                    gen();
-                    //50
-                    GeneratedN.setText(gen() + "");
-                    } else{
+                    if (enterLength.getText() != null && !enterLength.getText().toString().equals("")) {
+//                    gen();
+                        //50
+                        GeneratedN.setText(String.valueOf(gen()) );
+                    } else {
                         Toast.makeText(PasswordActivity.this, "enter", Toast.LENGTH_SHORT).show();
                     }
                 }
