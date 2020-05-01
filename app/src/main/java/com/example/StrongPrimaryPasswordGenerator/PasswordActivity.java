@@ -59,6 +59,7 @@ public class PasswordActivity extends AppCompatActivity {
         MINIMUM = fet;
         int v = random.nextInt(Integer.MAX_VALUE - MINIMUM) + MINIMUM;
         int g = r.nextInt(fet);
+
         return ((1 + r.nextInt(1)) * fet + r.nextInt(fet));
     }
 }
