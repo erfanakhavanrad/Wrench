@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Random;
 
@@ -30,6 +31,7 @@ public class PasswordActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 gen();
+                //50
                 GeneratedN.setText(gen() + "");
             }
         });
@@ -41,6 +43,7 @@ public class PasswordActivity extends AppCompatActivity {
                 ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
                 ClipData clip = ClipData.newPlainText("labe", GeneratedN.getText().toString());
                 clipboard.setPrimaryClip(clip);
+                Toast.makeText(PasswordActivity.this, "Copied", Toast.LENGTH_SHORT).show();
             }
         });
     }
