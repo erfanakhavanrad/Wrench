@@ -10,9 +10,9 @@ public class Model {
      * data : {"timings":{"Fajr":"04:55","Sunrise":"06:12","Dhuhr":"13:02","Asr":"16:46","Sunset":"19:51","Maghrib":"19:51","Isha":"21:09","Imsak":"04:45","Midnight":"01:02"},"date":{"readable":"01 May 2020","timestamp":"1588319244","hijri":{"date":"08-09-1441","format":"DD-MM-YYYY","day":"08","weekday":{"en":"Al Juma'a","ar":"الجمعة"},"month":{"number":9,"en":"Ramaḍān","ar":"رَمَضان"},"year":"1441","designation":{"abbreviated":"AH","expanded":"Anno Hegirae"},"holidays":[]},"gregorian":{"date":"01-05-2020","format":"DD-MM-YYYY","day":"01","weekday":{"en":"Friday"},"month":{"number":5,"en":"May"},"year":"2020","designation":{"abbreviated":"AD","expanded":"Anno Domini"}}},"meta":{"latitude":35.6891975,"longitude":51.3889736,"timezone":"Asia/Tehran","method":{"id":2,"name":"Islamic Society of North America (ISNA)","params":{"Fajr":15,"Isha":15}},"latitudeAdjustmentMethod":"ANGLE_BASED","midnightMode":"STANDARD","school":"STANDARD","offset":{"Imsak":0,"Fajr":0,"Sunrise":0,"Dhuhr":0,"Asr":0,"Maghrib":0,"Sunset":0,"Isha":0,"Midnight":0}}}
      */
 
-    private int code;
-    private String status;
-    private DataBean data;
+    int code;
+    String status;
+    DataBean data;
 
     public int getCode() {
         return code;
@@ -45,9 +45,9 @@ public class Model {
          * meta : {"latitude":35.6891975,"longitude":51.3889736,"timezone":"Asia/Tehran","method":{"id":2,"name":"Islamic Society of North America (ISNA)","params":{"Fajr":15,"Isha":15}},"latitudeAdjustmentMethod":"ANGLE_BASED","midnightMode":"STANDARD","school":"STANDARD","offset":{"Imsak":0,"Fajr":0,"Sunrise":0,"Dhuhr":0,"Asr":0,"Maghrib":0,"Sunset":0,"Isha":0,"Midnight":0}}
          */
 
-        private TimingsBean timings;
-        private DateBean date;
-        private MetaBean meta;
+        TimingsBean timings;
+        DateBean date;
+        MetaBean meta;
 
         public TimingsBean getTimings() {
             return timings;
@@ -86,15 +86,15 @@ public class Model {
              * Midnight : 01:02
              */
 
-            private String Fajr;
-            private String Sunrise;
-            private String Dhuhr;
-            private String Asr;
-            private String Sunset;
-            private String Maghrib;
-            private String Isha;
-            private String Imsak;
-            private String Midnight;
+            String Fajr;
+            String Sunrise;
+            String Dhuhr;
+            String Asr;
+            String Sunset;
+            String Maghrib;
+            String Isha;
+            String Imsak;
+            String Midnight;
 
             public String getFajr() {
                 return Fajr;
@@ -177,10 +177,10 @@ public class Model {
              * gregorian : {"date":"01-05-2020","format":"DD-MM-YYYY","day":"01","weekday":{"en":"Friday"},"month":{"number":5,"en":"May"},"year":"2020","designation":{"abbreviated":"AD","expanded":"Anno Domini"}}
              */
 
-            private String readable;
-            private String timestamp;
-            private HijriBean hijri;
-            private GregorianBean gregorian;
+            String readable;
+            String timestamp;
+            HijriBean hijri;
+            GregorianBean gregorian;
 
             public String getReadable() {
                 return readable;
@@ -226,14 +226,14 @@ public class Model {
                  * holidays : []
                  */
 
-                private String date;
-                private String format;
-                private String day;
-                private WeekdayBean weekday;
-                private MonthBean month;
-                private String year;
-                private DesignationBean designation;
-                private List<?> holidays;
+                 String date;
+                 String format;
+                 String day;
+                 WeekdayBean weekday;
+                 MonthBean month;
+                 String year;
+                 DesignationBean designation;
+                 List<?> holidays;
 
                 public String getDate() {
                     return date;
@@ -305,8 +305,8 @@ public class Model {
                      * ar : الجمعة
                      */
 
-                    private String en;
-                    private String ar;
+                    String en;
+                    String ar;
 
                     public String getEn() {
                         return en;
@@ -332,9 +332,9 @@ public class Model {
                      * ar : رَمَضان
                      */
 
-                    private int number;
-                    private String en;
-                    private String ar;
+                    int number;
+                    String en;
+                    String ar;
 
                     public int getNumber() {
                         return number;
@@ -367,8 +367,8 @@ public class Model {
                      * expanded : Anno Hegirae
                      */
 
-                    private String abbreviated;
-                    private String expanded;
+                    String abbreviated;
+                    String expanded;
 
                     public String getAbbreviated() {
                         return abbreviated;
@@ -399,13 +399,13 @@ public class Model {
                  * designation : {"abbreviated":"AD","expanded":"Anno Domini"}
                  */
 
-                private String date;
-                private String format;
-                private String day;
-                private WeekdayBeanX weekday;
-                private MonthBeanX month;
-                private String year;
-                private DesignationBeanX designation;
+               String date;
+               String format;
+               String day;
+               WeekdayBeanX weekday;
+               MonthBeanX month;
+               String year;
+               DesignationBeanX designation;
 
                 public String getDate() {
                     return date;
@@ -468,7 +468,7 @@ public class Model {
                      * en : Friday
                      */
 
-                    private String en;
+                    String en;
 
                     public String getEn() {
                         return en;
@@ -485,8 +485,8 @@ public class Model {
                      * en : May
                      */
 
-                    private int number;
-                    private String en;
+                     int number;
+                     String en;
 
                     public int getNumber() {
                         return number;
@@ -511,8 +511,8 @@ public class Model {
                      * expanded : Anno Domini
                      */
 
-                    private String abbreviated;
-                    private String expanded;
+                     String abbreviated;
+                     String expanded;
 
                     public String getAbbreviated() {
                         return abbreviated;
@@ -545,14 +545,14 @@ public class Model {
              * offset : {"Imsak":0,"Fajr":0,"Sunrise":0,"Dhuhr":0,"Asr":0,"Maghrib":0,"Sunset":0,"Isha":0,"Midnight":0}
              */
 
-            private double latitude;
-            private double longitude;
-            private String timezone;
-            private MethodBean method;
-            private String latitudeAdjustmentMethod;
-            private String midnightMode;
-            private String school;
-            private OffsetBean offset;
+            double latitude;
+            double longitude;
+            String timezone;
+            MethodBean method;
+            String latitudeAdjustmentMethod;
+            String midnightMode;
+            String school;
+            OffsetBean offset;
 
             public double getLatitude() {
                 return latitude;
@@ -625,9 +625,9 @@ public class Model {
                  * params : {"Fajr":15,"Isha":15}
                  */
 
-                private int id;
-                private String name;
-                private ParamsBean params;
+                int id;
+                String name;
+                ParamsBean params;
 
                 public int getId() {
                     return id;
@@ -659,8 +659,8 @@ public class Model {
                      * Isha : 15
                      */
 
-                    private int Fajr;
-                    private int Isha;
+                    int Fajr;
+                    int Isha;
 
                     public int getFajr() {
                         return Fajr;
@@ -693,15 +693,15 @@ public class Model {
                  * Midnight : 0
                  */
 
-                private int Imsak;
-                private int Fajr;
-                private int Sunrise;
-                private int Dhuhr;
-                private int Asr;
-                private int Maghrib;
-                private int Sunset;
-                private int Isha;
-                private int Midnight;
+                int Imsak;
+                int Fajr;
+                int Sunrise;
+                int Dhuhr;
+                int Asr;
+                int Maghrib;
+                int Sunset;
+                int Isha;
+                int Midnight;
 
                 public int getImsak() {
                     return Imsak;
