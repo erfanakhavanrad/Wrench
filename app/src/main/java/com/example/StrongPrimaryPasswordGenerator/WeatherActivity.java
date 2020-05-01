@@ -49,46 +49,7 @@ public class WeatherActivity extends AppCompatActivity {
                         }
 
                         System.out.println(response.toString());
-                        JSONObject object = new JSONObject(response.toString());
-                        String data = object.getString("data");
 
-                        JSONObject object1 = new JSONObject(data);
-                        String data1 = object1.getString("timings");
-
-                        JSONObject object2 = new JSONObject(data1);
-                        final String Sunrise = object2.getString("Sunrise");
-                        Log.d(TAG, "run: " + Sunrise);
-
-                        JSONObject object3 = new JSONObject(data1);
-                        final String Asr = object3.getString("Asr");
-                        Log.d(TAG, "run: " + Asr);
-
-                        JSONObject object4 = new JSONObject(data1);
-                        final String Maghrib = object4.getString("Maghrib");
-                        Log.d(TAG, "run: " + Maghrib);
-
-                        JSONObject object5 = new JSONObject(data1);
-                        final String Isha = object5.getString("Isha");
-                        Log.d(TAG, "run: " + Isha);
-
-
-//                        txt1.setText(Sunrise);
-                        buttonA = findViewById(R.id.buttonA);
-                        textView1.findViewById(R.id.textView1);
-                        textView2.findViewById(R.id.textView2);
-                        textView3.findViewById(R.id.textView3);
-                        textView4.findViewById(R.id.textView4);
-
-                        buttonA.setOnClickListener(new View.OnClickListener() {
-                            @Override
-                            public void onClick(View v) {
-                                textView1.setText(Sunrise + "");
-                                textView2.setText(Asr);
-                                textView3.setText(Maghrib);
-                                textView4.setText(Isha);
-
-                            }
-                        });
 
                     }
                 } catch (Exception e) {
