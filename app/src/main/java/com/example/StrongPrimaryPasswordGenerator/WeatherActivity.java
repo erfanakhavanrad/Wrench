@@ -68,10 +68,10 @@ public class WeatherActivity extends AppCompatActivity {
 //                        System.out.println(response.toString());
                         Log.d("Response", response.toString());
                         Model model = new Gson().fromJson(response.toString(), Model.class);
-                        textView1.setText("Sunrise " + model.getData().getTimings().getAsr());
-                        textView2.setText("Asr " + model.getData().getTimings().getDhuhr());
-                        textView3.setText("Maghreb " + model.getData().getTimings().getIsha());
-                        textView4.setText("Isha " + model.getData().getTimings().getMaghrib());
+                        textView1.setText("Sunrise " + model.getData().getTimings().getSunrise());
+                        textView2.setText("Asr " + model.getData().getTimings().getAsr());
+                        textView3.setText("Maghreb " + model.getData().getTimings().getMaghrib());
+                        textView4.setText("Isha " + model.getData().getTimings().getIsha());
 
                     }
                 } catch (Exception e) {
