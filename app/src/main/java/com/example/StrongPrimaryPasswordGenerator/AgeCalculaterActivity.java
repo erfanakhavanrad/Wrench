@@ -109,7 +109,7 @@ public class AgeCalculaterActivity extends AppCompatActivity {
                         int month = period.getMonths();
                         int days = period.getDays();
 
-                        tvResult.setText(years + " years " + month + " month " + days + " days");
+                        tvResult.setText(years + " سال " + month + " ماه " + days + " روز");
                     } else {
                         Toast.makeText(AgeCalculaterActivity.this, "birth date shouldn't be longer than today's date!", Toast.LENGTH_SHORT).show();
                     }
