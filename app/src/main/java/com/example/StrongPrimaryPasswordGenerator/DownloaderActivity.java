@@ -36,19 +36,23 @@ public class DownloaderActivity extends AppCompatActivity {
         mDownloadUrl.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                    if (checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
-                        //permission is denied, request it.
-                        String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE};
-                        //show popup for run time permission
-                        requestPermissions(permissions, PERMISSION_STORAGE_CODE);
+                if (mUrlEt.getText() != null && !mUrlEt.getText().toString().equals("")) {
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                        if (checkSelfPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED) {
+                            //permission is denied, request it.
+                            String[] permissions = {Manifest.permission.WRITE_EXTERNAL_STORAGE};
+                            //show popup for run time permission
+                            requestPermissions(permissions, PERMISSION_STORAGE_CODE);
+                        } else {
+                            //permission is granted, start download
+                            startDownloading();
+                        }
                     } else {
-                        //permission is granted, start download
+                        //OS is lower than marshmallow, start download
                         startDownloading();
                     }
-                } else {
-                    //OS is lower than marshmallow, start download
-                    startDownloading();
+                } else{
+                    Toast.makeText(DownloaderActivity.this, "enter", Toast.LENGTH_SHORT).show();
                 }
             }
         });

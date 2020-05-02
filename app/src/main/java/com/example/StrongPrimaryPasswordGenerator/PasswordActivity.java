@@ -26,18 +26,18 @@ public class PasswordActivity extends AppCompatActivity {
         final TextView GeneratedN = findViewById(R.id.GeneratedN);
         Button CopyPassword = findViewById(R.id.CopyPassword);
         enterLength = findViewById(R.id.enterLength);
-            btng.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    if (enterLength.getText() != null && !enterLength.getText().toString().equals("")) {
+        btng.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if (enterLength.getText() != null && !enterLength.getText().toString().equals("")) {
 //                    gen();
-                        //50
-                        GeneratedN.setText(String.valueOf(gen()) );
-                    } else {
-                        Toast.makeText(PasswordActivity.this, "enter", Toast.LENGTH_SHORT).show();
-                    }
+                    //50
+                    GeneratedN.setText(String.valueOf(gen()));
+                } else {
+                    Toast.makeText(PasswordActivity.this, "enter", Toast.LENGTH_SHORT).show();
                 }
-            });
+            }
+        });
         CopyPassword.setOnClickListener(new View.OnClickListener() {
             @Override
 
@@ -59,7 +59,6 @@ public class PasswordActivity extends AppCompatActivity {
         MINIMUM = fet;
         int v = random.nextInt(Integer.MAX_VALUE - MINIMUM) + MINIMUM;
         int g = r.nextInt(fet);
-
         return ((1 + r.nextInt(1)) * fet + r.nextInt(fet));
     }
 }

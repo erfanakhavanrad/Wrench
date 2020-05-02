@@ -7,6 +7,7 @@ import android.content.IntentFilter;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,11 +15,11 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button btnPassG = findViewById(R.id.btnPassG);
-        Button btnWeatherG = findViewById(R.id.btnWeatherG);
-        Button btnAgeG = findViewById(R.id.btnAgeG);
-        Button btnDownloader = findViewById(R.id.btnDownloader);
-        Button btnStopWatch = findViewById(R.id.btnStopWatch);
+        TextView btnPassG = findViewById(R.id.btnPassG);
+        TextView btnWeatherG = findViewById(R.id.textView10);
+        TextView btnAgeG = findViewById(R.id.btnAge);
+        TextView btnDownloader = findViewById(R.id.btnDownloader);
+        TextView btnStopWatch = findViewById(R.id.btnStopWatch);
 
         btnPassG.setOnClickListener(new View.OnClickListener() {
             @Override
