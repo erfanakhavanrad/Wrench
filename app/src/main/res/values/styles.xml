@@ -11,5 +11,9 @@
         <item name="android:selectableItemBackgroundBorderless">@color/colorPrimaryDark</item>
         <item name="colorControlHighlight">#d50000</item>
     </style>
-
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorAccent">@android:color/holo_green_dark</item>
+        <item name="background">@color/White</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
 </resources>

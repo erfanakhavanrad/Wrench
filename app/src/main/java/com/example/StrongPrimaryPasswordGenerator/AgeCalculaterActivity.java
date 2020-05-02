@@ -51,12 +51,12 @@ public class AgeCalculaterActivity extends AppCompatActivity {
             public void onClick(View v) {
                 DatePickerDialog datePickerDialog = new DatePickerDialog(
                         AgeCalculaterActivity.this,
-//                        R.style.Theme_AppCompat_DayNight_Dialog_MinWidth,
+                        R.style.DialogTheme,
 //                        dateSetListener1, year, month, day
-                        R.style.ThemeOverlay_AppCompat_Light,
+//                        R.style.ThemeOverlay_AppCompat_Light,
                         dateSetListener1, year, month, day
                 );
-                datePickerDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.WHITE));
+//                datePickerDialog.getWindow().setBa(new ColorDrawable(Color.WHITE));
                 datePickerDialog.show();
             }
         });
@@ -74,10 +74,10 @@ public class AgeCalculaterActivity extends AppCompatActivity {
             public void onClick(View v) {
                 DatePickerDialog datePickerDialog = new DatePickerDialog(
                         AgeCalculaterActivity.this,
-                        R.style.Theme_AppCompat_DayNight_Dialog_MinWidth,
+                        R.style.DialogTheme,
                         getDateSetListener2, year, month, day
                 );
-                datePickerDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.BLACK));
+//                datePickerDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.BLACK));
                 datePickerDialog.show();
             }
         });
