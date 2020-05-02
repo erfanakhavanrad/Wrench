@@ -7,6 +7,7 @@ import android.content.IntentFilter;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -20,11 +21,50 @@ public class MainActivity extends AppCompatActivity {
         TextView btnAgeG = findViewById(R.id.btnAge);
         TextView btnDownloader = findViewById(R.id.btnDownloader);
         TextView btnStopWatch = findViewById(R.id.btnStopWatch);
+        ImageView imageView1 = findViewById(R.id.imageView);
+        ImageView imageView2 = findViewById(R.id.imageView2);
+        ImageView imageView3 = findViewById(R.id.imageView3);
+        ImageView imageView4 = findViewById(R.id.imageView4);
+        ImageView imageView5 = findViewById(R.id.imageView5);
+        final Intent passPage = new Intent(MainActivity.this, PasswordActivity.class);
+        final Intent weatherPage = new Intent(MainActivity.this, WeatherActivity.class);
+        final Intent agePage = new Intent(MainActivity.this, AgeCalculaterActivity.class);
+        final Intent stopPage = new Intent(MainActivity.this, StopWatchActivity.class);
+        final Intent downloadPage = new Intent(MainActivity.this, DownloaderActivity.class);
+        imageView1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(passPage);
+            }
+        });
+        imageView2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(weatherPage);
+            }
+        });
+        imageView3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(agePage);
+            }
+        });
+        imageView4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(stopPage);
+            }
+        });
+        imageView5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(downloadPage);
+            }
+        });
 
         btnPassG.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent passPage = new Intent(MainActivity.this, PasswordActivity.class);
                 startActivity(passPage);
             }
         });
@@ -32,7 +72,6 @@ public class MainActivity extends AppCompatActivity {
         btnWeatherG.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent weatherPage = new Intent(MainActivity.this, WeatherActivity.class);
                 startActivity(weatherPage);
             }
         });
@@ -40,7 +79,6 @@ public class MainActivity extends AppCompatActivity {
         btnAgeG.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent agePage = new Intent(MainActivity.this, AgeCalculaterActivity.class);
                 startActivity(agePage);
             }
         });
@@ -48,14 +86,12 @@ public class MainActivity extends AppCompatActivity {
         btnStopWatch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent stopPage = new Intent(MainActivity.this, StopWatchActivity.class);
                 startActivity(stopPage);
             }
         });
         btnDownloader.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent downloadPage = new Intent(MainActivity.this, DownloaderActivity.class);
                 startActivity(downloadPage);
             }
         });
