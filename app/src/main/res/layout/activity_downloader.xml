@@ -7,6 +7,7 @@
     android:orientation="vertical"
     tools:context=".DownloaderActivity"
     android:background="@color/Cadet"
+    android:gravity="center"
     >
 
     <EditText
@@ -14,14 +15,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:hint="Enter URL"
+        android:hint="آدرس را وارد کنید"
         android:textSize="30sp" />
 
     <Button
         android:id="@+id/downloadUrl"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="download"
-        android:textSize="20sp" />
+        android:text="بارگیری"
+        android:textSize="25sp" />
 
 </LinearLayout>

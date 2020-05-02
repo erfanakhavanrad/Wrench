@@ -52,7 +52,7 @@ public class DownloaderActivity extends AppCompatActivity {
                         startDownloading();
                     }
                 } else{
-                    Toast.makeText(DownloaderActivity.this, "enter", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(DownloaderActivity.this, "ابتدا لینک را وارد کنید", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -88,7 +88,7 @@ public class DownloaderActivity extends AppCompatActivity {
                     startDownloading();
                 } else {
                     //permission denied. Show error message.
-                    Toast.makeText(this, "Permission denied!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "مجوز داده نشد", Toast.LENGTH_SHORT).show();
                 }
             }
         }

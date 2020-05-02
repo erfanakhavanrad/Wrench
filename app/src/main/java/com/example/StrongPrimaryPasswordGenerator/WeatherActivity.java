@@ -5,6 +5,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -68,14 +69,15 @@ public class WeatherActivity extends AppCompatActivity {
 //                        System.out.println(response.toString());
                         Log.d("Response", response.toString());
                         Model model = new Gson().fromJson(response.toString(), Model.class);
-                        textView1.setText("Sunrise " + model.getData().getTimings().getSunrise());
-                        textView2.setText("Asr " + model.getData().getTimings().getAsr());
-                        textView3.setText("Maghreb " + model.getData().getTimings().getMaghrib());
-                        textView4.setText("Isha " + model.getData().getTimings().getIsha());
+                        textView1.setText(" طلوع خورشید " + model.getData().getTimings().getSunrise());
+                        textView2.setText(" عصر " + model.getData().getTimings().getAsr());
+                        textView3.setText(" اذان مغرب " + model.getData().getTimings().getMaghrib());
+                        textView4.setText(" العشا " + model.getData().getTimings().getIsha());
 
                     }
                 } catch (Exception e) {
                     e.printStackTrace();
+
                 }
             }
         });

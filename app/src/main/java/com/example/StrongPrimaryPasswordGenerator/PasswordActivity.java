@@ -34,7 +34,7 @@ public class PasswordActivity extends AppCompatActivity {
                     //50
                     GeneratedN.setText(String.valueOf(gen()));
                 } else {
-                    Toast.makeText(PasswordActivity.this, "enter", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(PasswordActivity.this, "ابتدا عددی را وارد کنید", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -45,7 +45,7 @@ public class PasswordActivity extends AppCompatActivity {
                 ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
                 ClipData clip = ClipData.newPlainText("labe", GeneratedN.getText().toString());
                 clipboard.setPrimaryClip(clip);
-                Toast.makeText(PasswordActivity.this, "Copied", Toast.LENGTH_SHORT).show();
+                Toast.makeText(PasswordActivity.this, "کپی شد", Toast.LENGTH_SHORT).show();
             }
         });
     }
