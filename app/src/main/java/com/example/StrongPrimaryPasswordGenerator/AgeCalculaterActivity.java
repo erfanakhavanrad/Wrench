@@ -111,7 +111,7 @@ public class AgeCalculaterActivity extends AppCompatActivity {
 
                         tvResult.setText(years + " سال " + month + " ماه " + days + " روز");
                     } else {
-                        Toast.makeText(AgeCalculaterActivity.this, "birth date shouldn't be longer than today's date!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(AgeCalculaterActivity.this, "روز تولد نباید از روز انتخابی جدیدتر باشد", Toast.LENGTH_SHORT).show();
                     }
                 } catch (ParseException e) {
                     e.printStackTrace();
