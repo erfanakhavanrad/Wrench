@@ -106,7 +106,7 @@ public class AgeCalculaterActivity extends AppCompatActivity {
                         int month = period.getMonths();
                         int days = period.getDays();
 
-                        tvResult.setText(years + " سال " + month + " ماه " + days + " روز");
+                        tvResult.setText(years + " سال " + month + " ماه " + days + " روز ");
                     } else {
                         Toast.makeText(AgeCalculaterActivity.this, "روز تولد نباید از روز انتخابی جدیدتر باشد", Toast.LENGTH_SHORT).show();
                     }
