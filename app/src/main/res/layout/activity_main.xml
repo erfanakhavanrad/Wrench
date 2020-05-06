@@ -23,12 +23,12 @@
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="100dp"
-        android:layout_height="100dp"
+        android:layout_height="110dp"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="40dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/weather" />
+        app:srcCompat="@drawable/oghat" />
 
     <ImageView
         android:id="@+id/imageView3"
@@ -38,7 +38,7 @@
         android:layout_marginTop="60dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:srcCompat="@drawable/callendar" />
+        app:srcCompat="@drawable/callendarremaster" />
 
     <ImageView
         android:id="@+id/imageView4"
@@ -91,9 +91,9 @@
         android:id="@+id/textView10"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="52dp"
-        android:text="آب و هوا"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="40dp"
+        android:text="اوقات شرعی"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />

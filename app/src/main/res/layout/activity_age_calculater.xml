@@ -10,35 +10,39 @@
     android:padding="10dp"
     android:background="#9C8961"
     >
+    <Button
+        android:id="@+id/bt_today"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:drawableEnd="@drawable/ic_arrow"
+        android:background="@color/Transparent"
+        android:visibility="gone"
+        />
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="تاریخ تولد خود را وارد کنید"
+            android:textSize="25sp"
+            android:gravity="center"
+            />
         <Button
             android:id="@+id/bt_birth"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="01/01/2019"
             android:textSize="20sp"
             android:drawableEnd="@drawable/ic_arrow"
             android:background="@color/Transparent"
+android:gravity="center"
+            android:layout_gravity="center"
             />
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:text="به"
-            android:textSize="25sp"
-            android:textColor="@color/colorAccent"
-            android:textStyle="bold"
-            android:gravity="center"
-            />
-        <Button
-            android:id="@+id/bt_today"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="20sp"
-            android:drawableEnd="@drawable/ic_arrow"
-            android:background="@color/Transparent"/>
+
+
     </LinearLayout>
     <Button
         android:id="@+id/bt_calculate"

@@ -18,13 +18,13 @@ public class SplashActivity extends AppCompatActivity {
         EasySplashScreen splash = new EasySplashScreen(SplashActivity.this)
                 .withFullScreen()
                  .withTargetActivity(MainActivity.class)
-                .withSplashTimeOut(500)
+                .withSplashTimeOut(2000)
                 .withBackgroundColor(Color.parseColor("#FFFFFF"))
-                .withHeaderText("header")
-                .withFooterText("footer")
-                .withBeforeLogoText("befote")
-                .withAfterLogoText("Agter")
-                .withLogo(R.mipmap.ic_launcher);
+//                .withHeaderText("header")
+//                .withFooterText("footer")
+//                .withBeforeLogoText("befote")
+//                .withAfterLogoText("Agter")
+                .withLogo(R.drawable.logofullscreen);
         View RunSplash = splash.create();
         setContentView(RunSplash);
     }

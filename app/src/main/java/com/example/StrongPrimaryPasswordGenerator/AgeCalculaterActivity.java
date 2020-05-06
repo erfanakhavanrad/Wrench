@@ -52,18 +52,15 @@ public class AgeCalculaterActivity extends AppCompatActivity {
                 DatePickerDialog datePickerDialog = new DatePickerDialog(
                         AgeCalculaterActivity.this,
                         R.style.DialogTheme,
-//                        dateSetListener1, year, month, day
-//                        R.style.ThemeOverlay_AppCompat_Light,
                         dateSetListener1, year, month, day
                 );
-//                datePickerDialog.getWindow().setBa(new ColorDrawable(Color.WHITE));
                 datePickerDialog.show();
             }
         });
         dateSetListener1 = new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker view, int year, int month, int day) {
-                month = month + 1;
+//                month = month + 1;
                 String date = day + "/" + month + "/" + year;
                 btBirth.setText(date);
             }
@@ -77,14 +74,14 @@ public class AgeCalculaterActivity extends AppCompatActivity {
                         R.style.DialogTheme,
                         getDateSetListener2, year, month, day
                 );
-//                datePickerDialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.BLACK));
+
                 datePickerDialog.show();
             }
         });
         getDateSetListener2 = new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker view, int year, int month, int day) {
-                month = month + 1;
+//                month = month + 1;
                 String date = day + "/" + month + "/" + year;
                 btToday.setText(date);
             }
