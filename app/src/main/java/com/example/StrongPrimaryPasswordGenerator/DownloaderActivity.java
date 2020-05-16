@@ -53,7 +53,7 @@ public class DownloaderActivity extends AppCompatActivity {
                    Toast.makeText(DownloaderActivity.this, "ابتدا لینک را وارد کنید", Toast.LENGTH_SHORT).show();
                }
            } else{
-               Toast.makeText(DownloaderActivity.this, "Enter a valid link", Toast.LENGTH_SHORT).show();
+               Toast.makeText(DownloaderActivity.this, "از لینک معتبر استفاده کنید", Toast.LENGTH_SHORT).show();
            }
             }
         });
