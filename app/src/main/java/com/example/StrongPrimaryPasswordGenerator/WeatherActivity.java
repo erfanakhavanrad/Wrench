@@ -78,6 +78,10 @@ public class WeatherActivity extends AppCompatActivity {
                 } catch (Exception e) {
                     e.printStackTrace();
 
+                    textView1.setText(" طلوع خورشید " + "05:58");
+                    textView2.setText(" عصر " + "16:48");
+                    textView3.setText(" اذان مغرب " + "20:04");
+                    textView4.setText(" العشا " + "21:26");
                 }
             }
         });
