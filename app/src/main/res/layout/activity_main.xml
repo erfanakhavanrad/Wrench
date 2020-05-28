@@ -11,61 +11,62 @@
 
 
     <ImageView
+        android:id="@+id/imageQR"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="36dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/qr" />
+
+
+    <TextView
+        android:id="@+id/btnQR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="36dp"
+        android:text="بارکد خوان"
+        android:textSize="25sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageQR" />
+
+    <ImageView
         android:id="@+id/imageView"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="168dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/lock" />
-
-    <ImageView
-        android:id="@+id/imageView2"
-        android:layout_width="100dp"
-        android:layout_height="110dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginEnd="40dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/oghat" />
 
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="332dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/callendarremaster" />
 
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:layout_marginTop="60dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginTop="332dp"
+        android:layout_marginEnd="36dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/stopwatch" />
-
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="352dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:srcCompat="@drawable/download" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="88dp"
+        android:layout_marginTop="64dp"
         android:background="@color/Transparent"
         android:gravity="center"
         android:text="چیکار کنم؟"
@@ -79,31 +80,19 @@
         android:id="@+id/btnPassG"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="60dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginTop="16dp"
         android:text="رمزساز"
         android:textSize="25sp"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.033" />
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:layout_marginEnd="40dp"
-        android:text="اوقات شرعی"
-        android:textSize="25sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
         android:id="@+id/btnAge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="44dp"
-        android:layout_marginTop="12dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="16dp"
         android:text="تاریخ و سن"
         android:textSize="25sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -113,22 +102,12 @@
         android:id="@+id/btnStopWatch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="132dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="56dp"
         android:text="کرنومتر"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
-    <TextView
-        android:id="@+id/btnDownloader"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="172dp"
-        android:layout_marginTop="20dp"
-        android:text="دانلودر"
-        android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
